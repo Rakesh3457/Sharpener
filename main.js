@@ -22,9 +22,57 @@
 
 // Query Selector
 
-var li=document.querySelector('.list-group-item:nth-child(2)');
-li.style.background= 'green';
+// 
 
 
-var thirdli=document.querySelector('.list-group-item:nth-child(3)');
-thirdli.style.display='none';
+// var thirdli=document.querySelector('.list-group-item:nth-child(3)');
+// thirdli.style.display='none';
+
+
+
+//TRanversing the DOM
+//var listItems = document.querySelector('#items')
+
+
+
+//Parent Element
+
+// listItems.parentElement.style.backgroundColor='#a4f2f9';
+
+//ChildElement
+
+// listItems.children[2].style.backgroundColor='green';
+
+
+//firstElementChild
+// listItems.firstElementChild.style.fontWeight='900'
+
+
+// lastElementChild
+// listItems.lastElementChild.style.fontWeight='900'
+
+// Sibling Element
+
+// listItems.previousElementSibling.style.backgroundColor='yellow';
+
+//NEW CHILD
+
+var newDiv= document.createElement('div');
+newDiv.classname='class1';
+
+// create text node
+
+var textnode = document.createTextNode('hey its me');
+
+newDiv.appendChild(textnode);
+
+// show new child
+
+var container = document.querySelector('header .container');
+var h1= document.querySelector('header h1');
+
+container.insertBefore(newDiv,h1);
+
+
+
+
